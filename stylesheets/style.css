@@ -44,8 +44,8 @@
     font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif; }
   hr.large {
     border: none;
-    height: 8px;
-    background: #ebebeb;
+    height: 1px;
+    background: #E7E7E7;
     margin: 10px 0; }
   div.doc-section {
     margin: 30px 0; }

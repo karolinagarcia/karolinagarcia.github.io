@@ -154,9 +154,9 @@ footer {
 /* #Basic Styles
 ================================================== */
 body {
-  background: #F5F5F5;
+  background: #fcf1f2;
   font: 14px/21px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
-  color: #444;
+  color: #4C3228;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
@@ -230,7 +230,7 @@ em {
 }
 strong {
   font-weight: bold;
-  color: #333;
+  color: #4C3228;
 }
 small {
   font-size: 80%;
@@ -604,6 +604,12 @@ span.blue {
 }
 span.grey {
   color: #777;
+}
+span.pink {
+  color: #CA7C83;
+}
+span.brown {
+  color: #4C3228;
 }
 
 .fancy-button {
