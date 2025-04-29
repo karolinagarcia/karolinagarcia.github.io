@@ -1,283 +1,108 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Karolina Garcia</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  ================================================== -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- CSS
-  ================================================== -->
-  <link rel="stylesheet" href="stylesheets/base.css">
-  <link rel="stylesheet" href="stylesheets/skeleton.css">
-  <link rel="stylesheet" href="stylesheets/layout.css">
-  <link rel="stylesheet" href="stylesheets/style.css">
-
-  <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-
-  <!-- Favicons
-  ================================================== -->
-  <link rel="shortcut icon" href="./favicon.ico">
-
-  <!-- Google Analytics Tracking Code
-  ================================================== -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BL7XK47GP2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BL7XK47GP2');
-</script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheets/professional_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
-
-  <!-- Primary Page Layout
-  ================================================== -->
-
-  <div class="container">
-
-    <!-- Sidebar -->
-    <div class="three columns sidebar">
-      <nav>
-      <h4 id="logo" style="text-align:center;">
-      <img src="assets/images/avatar/avatar.png" class="avatar" />
-      <strong><span class='brown'>Karolina Garcia</span></strong>
-      </h4>
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div><strong>Karolina Garcia</strong></div>
       <ul>
-        <hr/>
-        <!-- <li><a href="/blog/"><h5><strong><span class='pink'>My blog</span></strong></h5></a></li> -->
-        <li><a href="mailto:karolinagarcia.contact@gmail.com"><span class='blue'>Email</span></a></li>
-        <li><a href="./assets/KGarcia_CV.pdf" target="_blank"><span class='blue'>CV</span></a></li>
-        <!--<li><a href="" target="_blank"><span class='blue'>CV</span></a></li> -->
-        <li><a href="https://ui.adsabs.harvard.edu/search/filter_author_facet_hier_fq_author=AND&filter_author_facet_hier_fq_author=author_facet_hier%3A%220%2FGarcia%2C%20K%22&filter_database_fq_database=AND&filter_database_fq_database=database%3A%22astronomy%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(author_facet_hier%3A%220%2FGarcia%2C%20K%22)&fq_database=(database%3A%22astronomy%22)&p_=0&q=((%20author%3A%22Garcia%2CKarolina%22%20collection%3Aastronomy%20year%3A2019-2023)%20AND%20citation_count%3A%5B0%20TO%209999999%5D)&sort=date%20desc%2C%20bibcode%20desc" target="_blank"><span class='blue'>Publications</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=wbsYUNMAAAAJ&hl=en" target="_blank"><span class='blue'>Google Scholar</span></a></li>
-        <li><a href="https://www.linkedin.com/in/karolinagarcia/" target="_blank"><span class='blue'>LinkedIn</span></a></li>
-        <li><a href="https://github.com/karolinagarcia" target="_blank"><span class='blue'>Github</span></a></li>
-        <li><a href="https://twitter.com/karolinatgarcia" target="_blank"><span class='blue'>Twitter</span></a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Research</a></li>
+        <li><a href="./assets/KGarcia_CV_2025.pdf" target="_blank">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      </nav>
+    </div>
+  </nav>
+
+<div class="container">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
+      <img src="assets/images/avatar/avatar.png" alt="Karolina Garcia"
+           style="width: 163px; border-radius: 8px; flex-shrink: 0; margin-top: 4px;">
+      <div style="flex: 1;">
+          I’m an astrophysicist and cosmologist combining cosmological simulations and real-world data to better understand how galaxies and the Universe evolve through time.
+        <p>
+          I began my career in engineering and industry before transitioning into academia to follow my passion for astrophysics. I earned my PhD in Astronomy from the University of Florida, and I’m currently a CAPS Postdoctoral Fellow at the National Center for Supercomputing Applications (NCSA) — University of Illinois, where I work on tools to interpret line-intensity mapping experiments and galaxy surveys.
+        </p>
+        <p>
+          Beyond research, I’m passionate about science communication, education, and making astronomy accessible — through social media, public talks, and creative projects. I also find joy in music (guitar + vocals), playing sports, and exploring new ways to connect science with everyday life.
+        </p>
+      </div>
+    </div>
+    
+  </section>
+  
+
+  <section id="projects">
+    <h2>Research Projects</h2>
+
+    <div class="card">
+      <h3>Modeling intensity mapping experiments in cosmological hydrodynamical simulations
+      </h3>
+      <p>
+        I led the development of a tool (slick) that combines cosmological hydrodynamic simulations with thermal/radiative/chemical equilibrium PDR models to calculate CO/[CI]/[CII] line luminosities from every gas particle in different redshifts of the simulation. With this tool, we are able to build light cones from z=0 to z=10. 
+        <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad642c" target="_blank">Read more</a>
+      </p>
     </div>
 
-    <!-- Content -->
-    <div class="twelve columns offset-by-four content">
+    <div class="card">
+      <h3>New, fully symmetric, method for the 3PCF line of sight</h3>
+      <p>
+        The 3-point correlation function (3PCF) is a powerful tool for cosmology as it goes beyond the 2PCF, and probes late-time non-Gaussianities. To access its information, we must track the 3PCF’s dependence not only on each triangle’s shape, but also on its orientation with respect to the line of sight. We developed a method that measures the 3PCF while keeping the line of sight fully symmetric between the triangles' triplet members. 
+        <a href="https://academic.oup.com/mnras/article/515/1/1199/6604894" target="_blank">Read more</a>
+      </p>
+    </div>
 
-        <div class="doc-section" id="whoami">
-          <!-- <p align="justify">
-          <span class='red'>✨ Here is my blog, 
-            <strong><a href="https://karolinagarcia.github.io/blog/">check it out</a></strong> 
-            if you are interested in astronomy and stuff.
-          </span>
-          </p> -->
-          <h4><strong><span class='blue'>About me</span></strong></h4>
+    <div class="card">
+      <h3>Finding galaxy clusters in the Boötes field with Spitzer</h3>
+      <p>
+        We identified >800 galaxy cluster and group candidates in the 9.3 deg² Boötes region, among which >300 lie beyond z = 1.5. The catalog was built based on a wavelet-style algorithm and photometric redshift probability distributions using data from Spitzer Deep Wide-Field Survey, NOAO Deep Wide-Field Survey, Infrared Boötes Imaging Survey, and Large Binocular Cameras imaging.
+      </p>
+    </div>
 
-<p align="justify">Cosmologist, astronomer (MSc), engineer (BSc), researcher, and science outreacher. Raised in Brazil.
-  Music enthusiast,  chocolate addicted. Have worked in Fortune-500 companies, such as Shell and Coca-Cola, but quit to persue an academic career.
-  Currently investigating the nature of dark energy as a PhD student at University of Florida. Have used supernovae, galaxies, galaxy clusters, and
-  even the interstellar medium to study the history of the universe.</p>
+    <div class="card">
+      <h3>Constraining σ₈ with supernova peculiar velocities</h3>
+      <p>
+        We investigated the optima survey strategies to measure peculiar velocity fields with Type Ia supernovae. By varying the observational parameters, such as the area of the sky we are looking at, the depth being reached and the cadence, we found out which combination gives the best estimate on σ8 using supernova peculiar velocities. 
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S2212686419301220?via%3Dihub" target="_blank">Read more</a>
+      </p>
+    </div>
 
+    <div class="card">
+      <h3>Detection of Type Ia supernovae</h3>
+      <p>
+        We developed a pipeline for supernovae detection focused on surveys that make use of narrow-band filters, such as J-PAS, J-PLUS and S-PLUS. 
+      </p>
+    </div>
 
-        </div>
+  </section>
 
-        <hr />
-        <div class="doc-section" id="education">
-          <h4><strong><span class='blue'>Education</span></strong></h4>
-          <ul class="square">
-            <li><strong>University of Florida</strong>&emsp;Gainesville, FL, USA<br/>
-                <em>PhD candidate</em> in Astronomy<br/>
-              Thesis: <em>Modeling line intensity mapping in hydrodynamical simulations</em>
-            </li>
-            <li><strong>Federal University of Rio de Janeiro</strong>&emsp;Rio de Janeiro, RJ, Brazil<br/>
-                <em>Master of Science</em> in Astronomy<br/>
-                Thesis: <em>Optimizing observations of supernova peculiar velocities</em>
-              </li>
-            </li>
-            <li><strong>Pontifical Catholic University of Rio de Janeiro</strong>&emsp;Rio de Janeiro, RJ, Brazil<br/>
-              <em>Bachelor of Science</em> in Industrial Engineering<br/>
-              Thesis: <em>Project of a finance tracking mobile app focused on low-income families</em>
-            </li>
-          </li>
-          </ul>
-      </div>
-<!--
-        <hr />
-        <div class="doc-section" id="publications">
-            <h4><strong><span class='blue'>Publications</span></strong></h4>
-            <ul class="square">
-                <li>
-                    <strong>K Garcia</strong>, D Narayanan, G Popping, R Anirudh, S Sutherland, M Kaasinen<br />
-                    slick: Modeling a Universe of Molecular Line Luminosities in Hydrodynamical Simulations<br /> 
-                    Submitted to Apj in November, 2023. <em>arXiv link</em> [<a href="https://arxiv.org/abs/2311.01508" target="_blank">link</a>]
-                </li>
-                <li>
-                    <strong>K Garcia</strong>, Z Slepian<br />
-                    Improving the Line of Sight for the Anisotropic 3-Point Correlation Function of Galaxies: Centroid and Unit-Vector-Average Methods Scaling as O(N2)<br /> 
-                    <em>MNRAS. June, 2022.</em> [<a href="https://doi.org/10.1093/mnras/stac1540" target="_blank">link</a>]
-                </li>
-                <li>
-                    <strong>K Garcia</strong>, M Quartin, B B Siffert<br />
-                    On the amount of peculiar velocity field information in supernovae from LSST and beyond<br />
-                    <em>Physics of the Dark Universe. September, 2020.</em> [<a href="https://www.sciencedirect.com/science/article/abs/pii/S2212686419301220?via%3Dihub" target="_blank">link</a>]
-                </li>
-                <li>
-                  W Lyra, M Rice, D Adler-Belendez, N Jacobson, A Pantelic, <strong>K Garcia</strong>, L S Cassara, C Crow, P Hayne, J Marlow<br />
-                  Ad Astra Academy: Using Space Exploration to Promote Student Learning and Motivation in the City of God, Rio de Janeiro, Brazil<br />
-                  <em>CAP Journal. March, 2020.</em> [<a href="https://www.capjournal.org/issues/27/27_05.php" target="_blank">link</a>]
-              </li>
-              <li>
-                A J Cenarro, M Moles, D Cristóbal-Hornillos, A Marín-Franch, A Ederoclite, ... <strong>K Garcia</strong> ... <br />
-                J-PLUS: The Javalambre Photometric Local Universe Survey<br />
-                <em>A&A. February, 2019.</em> [<a href="	https://doi.org/10.1051/0004-6361/201833036" target="_blank">link</a>]
-            </li>
-            </ul>
-        </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ktgarcia@illinois.edu">ktgarcia@illinois.edu</a></p>
+    <p>
+      <a href="https://github.com/karolinagarcia" target="_blank">GitHub</a> |
+      <a href="https://scholar.google.com/citations?user=wbsYUNMAAAAJ&hl=en" target="_blank">Google Scholar</a> |
+      <a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=((%20author%3A%22Garcia%2CKarolina%22%20collection%3Aastronomy%20year%3A2019-2025)%20AND%20citation_count%3A%5B0%20TO%209999999%5D)&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank">ads</a> |
+      <a href="https://www.linkedin.com/in/karolinagarcia/" target="_blank">LinkedIn</a>
+    </p>
+  </section>
 
-        <hr />
-        <div class="doc-section" id="work">
-          <h4><strong><span class='blue'>Softwares</span></strong></h4>
-            <ol>
-              <li><strong>SLICK</strong>: ... [<a href="https://github.com/karolinagarcia/slick/" target="_blank">Github</a>][<a href="https://karolinagarcia.github.io/slick" target="_blank">Website</a>]</li>
-          </ul>
-        </div>
-      -->
-        <hr />
-        <div class="doc-section" id="acadprojects">
-          <h4><strong><span class='blue'>Academic Projects</span></strong></h4>
-            <ul class="square">
-              <em>Here I explain the main projects I have led or been strongly involved in. For a full list of papers I collaborated on, please check <a href="https://scholar.google.com/citations?user=wbsYUNMAAAAJ&hl=en" target="_blank">Google Scholar</a>.</em>
-              <li>
-                <strong>Modeling intensity mapping experiments in cosmological hydrodynamical simulations</strong><br />
-                <u>K Garcia, D Narayanan, G Popping, R Anirudh, S Sutherland, M Kaasinen
-                  </u> </br>
-                I led the development of a tool (<a href="slick" target="_blank">slick</a>) that combines cosmological hydrodynamic simulations with thermal/radiative/chemical equilibrium PDR models
-                to calculate CO/[CI]/[CII] line luminosities from every gas particle in different redshifts of the simulation.
-                With this tool, we are able to build light cones from z=0 to z=10. For more details, check out <a href="https://arxiv.org/abs/2311.01508" target="_blank">our paper on arXiv</a>, submitted to ApJ.<br />
-              </li>
-              <li>
-                <strong>New, fully symmetric, method for the 3PCF line of sight</strong><br />
-                <u>K Garcia, Z Slepian </u></br>
-                The 3-point correlation function (3PCF) is a powerful tool for cosmology as
-                it goes beyond the 2PCF, and probes late-time non-Gaussianities.
-                To access its information, we must track the 3PCF’s dependence not only on each triangle’s shape, but also on its orientation with respect to the line of sight.
-                We developed a method that measures the 3PCF while keeping the line of sight fully symmetric between the triangles' triplet members.
-                For more details, you can check out our <a href="https://doi.org/10.1093/mnras/stac1540" target="_blank">paper published in MNRAS</a>.<br />
-              </li>
-              <li>
-                <strong>Finding galaxy clusters in the Boötes field with Spitzer</strong><br />
-                <u>K Garcia, A Gonzalez, M Brodwin, N Hansen, T George, A Trudeau, K Thongkham et al.</u> </br>
-                We identified >4,000 galaxy cluster and group candidates in the 9.3 deg^2 Boötes region,
-                among which >1,000 lie beyond z = 1.5, and >500 beyond z = 2. The catalog was built based on
-                a wavelet-style algorithm and photometric redshift probability distributions using data from
-                Spitzer Deep Wide-Field Survey, NOAO Deep Wide-Field Survey, Infrared Boötes Imaging Survey,
-                and Large Binocular Cameras imaging.<br />
-              </li>
-              <li>
-                <strong>Constraining σ8 with supernova peculiar velocities</strong><br />
-                <u>K Garcia, M Quartin, B B Siffert</u> </br>
-                We investigated the optima survey strategies to measure peculiar velocity fields with Type Ia supernovae.
-                By varying the observational parameters, such as the area of the sky we are looking at, the depth being reached and the cadence, we found out which combination gives the best estimate on σ8 using supernova peculiar velocities.
-                For more details, take a look at the <a href="https://www.sciencedirect.com/science/article/abs/pii/S2212686419301220?via%3Dihub" target="_blank">paper published in Physics of the Dark Universe</a>.<br />
-              </li>
-              <li>
-                <strong>Detection of Type Ia supernovae</strong><br />
-                <u>B B Siffert, K Garcia, M Quartin</u> </br>
-                We developed a pipeline for supernovae detection focused on surveys that make use of narrow-band filters, such as J-PAS, J-PLUS and S-PLUS.
-                <!--The supernova pipeline is based on the subtraction of two images from the same region in the sky in different epochs, but in the same filter.
-                Some of the programs used are: WSCRemap (to align both images), HOTPANTS (to subtract the images) and SExtractor (to make a catalogue of the
-                objects found in the final image). Then, I use a program written in C++ to analyse the properties of the final objects - such as size and format -
-                to eliminate as many transient objects that are not supernovae as possible.
-                We also found efficiency indicators for this pipeline. This is done by measuring the process' completeness (by simulating fake
-                supernovae and checking how many of them the pipeline will detect) and purity (by checking how many objects beyond the fake supernovae - impurities -
-                it will detect). In order to simulate supernovae light curves, I used the program SNANA, which requires the strategy of the survey and the
-                characteristics of the telescope as input, and returns simulated supernovae light curves as output. Besides that, I used Mathematica to do statistical
-                analysis regarding these simulations (so as to find the best S/N cut, for example).--> <br />
-          </li>
-            </ul>
-        </div>
+</div>
 
-        <hr />
-        <div class="doc-section" id="talks">
-          <h4><strong><span class='blue'>Outreach Involvement</span></strong></h4>
-          <ul class="square">
-            <li>
-              <strong>Ad Astra Academy </strong> <br />
-              Educational outreach and documentary project whose
-                objective is to inspire disadvantaged students to discover opportunities through
-                science and exploration. I am part of the team since 2015. [<a href="https://www.capjournal.org/issues/27/27_05.php" target="_blank">Article</a>][<a href="http://www.adastra.world/" target="_blank">Website</a>]
-          </li>
-            <li>
-              <strong>Astrotubers</strong> <br />
-              Brazilian outreach Youtube channel with >80k followers that aims to make science
-                accessible and enjoyable by everyone. I was one of the founders and have been one of the project's coordinator since
-                2017. [<a href="https://www.youtube.com/@AstroTubers" target="_blank">Youtube Channel</a>]
-            </li>
-            <li>
-              <strong>Twitter Threads</strong> <br />
-              I write about Astronomy in general mostly in Portuguese. [<a href="https://twitter.com/karolinatgarcia" target="_blank">Twitter Profile</a>]
-          </li>
+<footer>
+  <p>© 2025 Karolina Garcia. All rights reserved.</p>
+</footer>
 
-        </ul>
-        </div>
-
-    </div><!-- Content -->
-
-    <footer class="eleven center-column">
-        <hr class="large"/><p align="center">2023 © Karolina Garcia. All Rights Reserved.</p>
-        
-        <!-- <p>
-          <a href="https://scholar.google.com/citations?user=dCa-pW8AAAAJ&amp;hl=en&amp;oi=ao" target="_blank">
-              <img src="/assets/images/logo_scholar.png">
-          </a>
-          <a href="https://www.instagram.com/naman_shukla_/" target="_blank">
-              <img src="/assets/images/logo_instagram.png">
-          </a>
-          <img src="/assets/images/logo_twitter.png"><a href="https://twitter.com/namanatulshukla" target="_blank">
-              
-          </a>
-      </p> -->
-      </footer>
-
-  </div><!-- container -->
-
-<!-- End Document
-================================================== -->
 </body>
 </html>
 
-<style>
-img.avatar {
-    border-radius: 50%;
-    display: block;
-    margin: 30px auto;
-    width: 150px;
-}
-
-table {
-    /*font-family: arial, sans-serif;*/
-    border-collapse: collapse;
-    width: 50%;
-}
-
-td, th {
-    border: 0px solid #dddddd;
-    text-align: left;
-    padding: 2px;
-    height: 5px;
-}
-</style>
