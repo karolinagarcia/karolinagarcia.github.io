@@ -111,18 +111,20 @@ footer {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
+  #about {
+    text-align: left;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 1rem;
+  #about .about-top {
+    display: block;
   }
 
-  .card {
-    padding: 1rem;
+  #about .about-top img {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  #about .about-top > div {
+    width: 100%;
   }
 }
