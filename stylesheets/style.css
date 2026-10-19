@@ -179,3 +179,30 @@ footer {
     flex-basis: 100%;
   }
 }
+
+/* Publications */
+
+#publications .card {
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+#publications .card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+#publications .card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0 0 0.8rem 0;
+}
+
+#publications .card p:last-child {
+  margin-bottom: 0;
+}
+
+.pub-status {
+  color: #777;
+  font-style: italic;
+}
