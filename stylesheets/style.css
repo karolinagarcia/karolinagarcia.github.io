@@ -109,6 +109,17 @@ footer {
   font-size: 14px;
 }
 
+/* About Me text */
+.about-text {
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.about-text p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 /* Desktop: side by side */
 .about-flex {
   display: flex;
