@@ -227,3 +227,24 @@ footer {
   margin-top: 1rem;
 }
 
+/* Consistent text size across the website */
+
+#research > p,
+#research .card p,
+#research .publication-list li,
+#outreach p,
+#cv p,
+#contact p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Research headings */
+#research .card h3 {
+  font-size: 20px;
+}
+
+#research .card h4 {
+  font-size: 13px;
+}
+
