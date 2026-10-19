@@ -180,25 +180,39 @@ footer {
   }
 }
 
-/* Publications */
 
-#publications .card {
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 1.2rem;
+/* Research & Publications */
+
+.research-card {
+  margin-bottom: 1.5rem;
 }
 
-#publications .card h3 {
-  font-size: 1.3rem;
+.research-card h3 {
+  font-size: 1.4rem;
   margin-bottom: 0.8rem;
 }
 
-#publications .card p {
-  font-size: 0.92rem;
-  line-height: 1.6;
-  margin: 0 0 0.8rem 0;
+.research-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
 }
 
-#publications .card p:last-child {
+.publication-list {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.publication-list li {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+.publication-list li:last-child {
   margin-bottom: 0;
 }
 
@@ -206,3 +220,10 @@ footer {
   color: #777;
   font-style: italic;
 }
+
+.publication-footer {
+  font-size: 0.9rem;
+  text-align: right;
+  margin-top: 1rem;
+}
+
