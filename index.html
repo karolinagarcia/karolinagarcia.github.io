@@ -8,9 +8,8 @@
   <title>Karolina Garcia | Astrophysicist</title>
 
   <meta name="description"
-        content="Karolina Garcia is an astrophysicist working on galaxy formation, interstellar medium physics, cosmological simulations, and line-intensity mapping.">
+        content="Karolina Garcia is an astrophysicist studying galaxy formation, interstellar medium physics, cosmological simulations, and line-intensity mapping.">
 
-  <!-- Main stylesheet -->
   <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 
@@ -25,8 +24,8 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
           <li><a href="#outreach">Outreach</a></li>
+          <li><a href="#cv">CV</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -41,11 +40,9 @@
       <h2>About Me</h2>
 
       <div class="about-flex">
-        <img
-          src="./assets/images/avatar/headshot2.jpeg"
-          alt="Karolina Garcia"
-          class="about-img"
-        >
+        <img src="./assets/images/avatar/headshot2.jpeg"
+             alt="Karolina Garcia"
+             class="about-img">
 
         <div class="about-text">
           <p>
@@ -75,159 +72,219 @@
     </section>
 
 
-    <!-- RESEARCH -->
+    <!-- RESEARCH AND PUBLICATIONS -->
     <section id="research">
-      <h2>Research Projects</h2>
-
-      <div class="card">
-        <h3>SLICK: Modeling the Interstellar Medium</h3>
-        <p>
-          I develop SLICK, a framework for predicting molecular
-          and atomic line emission from cosmological hydrodynamical
-          simulations. By combining models of interstellar medium
-          physics, radiative transfer, and machine learning,
-          SLICK connects the small-scale physical conditions
-          of galaxies to their observable emission.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Line-Intensity Mapping</h3>
-        <p>
-          I investigate how emission from galaxies contributes
-          to line-intensity mapping signals across cosmic time.
-          My work includes predictions for CO and [CII]
-          luminosity functions, line ratios, and power spectra,
-          as well as collaborations with observational
-          line-intensity mapping experiments.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>AGN and Molecular Gas</h3>
-        <p>
-          I study how radiation from active galactic nuclei
-          influences the physical and chemical conditions
-          of the interstellar medium, particularly the
-          emission of molecular and atomic lines.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Galaxy Clusters in the Boötes Field</h3>
-        <p>
-          I lead the development and characterization of a
-          galaxy cluster catalog in the Boötes field,
-          identifying 825 cluster candidates across a broad
-          range of redshifts. This work combines
-          multiwavelength observations, photometric redshifts,
-          and cluster detection methods.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Cosmological Statistics and Supernovae</h3>
-        <p>
-          My previous research includes methods for measuring
-          the anisotropic three-point correlation function
-          of galaxies and forecasting cosmological constraints
-          from Type Ia supernova peculiar velocities.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- PUBLICATIONS -->
-    <section id="publications">
-      <h2>Publications &amp; Ongoing Work</h2>
+      <h2>Research &amp; Publications</h2>
 
       <p>
-        Selected publications and ongoing research,
-        organized by scientific area.
-        For a complete publication list, see my
-        <a href="https://scholar.google.com/"
+        My research spans galaxy formation, interstellar medium
+        physics, and cosmological observations, with an emphasis
+        on connecting detailed physical models to large-scale
+        surveys and observations.
+      </p>
+
+
+      <!-- 1. ISM -->
+      <div class="card research-card">
+        <h3>Galaxy Formation &amp; Interstellar Medium Physics</h3>
+
+        <p>
+          I develop SLICK (Scalable Line Intensity Computation Kit),
+          a framework for predicting atomic and molecular line
+          emission in cosmological hydrodynamical simulations.
+          By combining interstellar medium modeling, radiative
+          transfer, and machine learning, my work connects
+          the physical conditions of gas in galaxies to
+          observable emission across cosmic time.
+        </p>
+
+        <h4>Related Publications</h4>
+
+        <ul class="publication-list">
+          <li>
+            <strong>Garcia, K.</strong> et al. (2024).
+            <a href="https://doi.org/10.3847/1538-4357/ad642c"
+               target="_blank" rel="noopener noreferrer">
+              SLICK: Modeling a Universe of Molecular Line
+              Luminosities in Hydrodynamical Simulations.
+            </a>
+            <em>ApJ, 974, 197.</em>
+          </li>
+
+          <!-- Add Anirudh et al. paper here. -->
+
+          <li>
+            <strong>Garcia, K.</strong> et al.
+            SLICK-2: Multi-Line ISM Emission in
+            Cosmological Simulations.
+            <span class="pub-status">In preparation.</span>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 2. LIM -->
+      <div class="card research-card">
+        <h3>Line-Intensity Mapping</h3>
+
+        <p>
+          I investigate the connection between galaxy-scale
+          physics and the aggregate emission measured by
+          line-intensity mapping experiments. Using cosmological
+          simulations, I predict CO, [CI], and [CII] luminosity
+          functions, line ratios, and power spectra, and explore
+          how these observables depend on the physical
+          conditions of galaxies. I also participate in
+          observational collaborations including TIM and FYST.
+        </p>
+
+        <h4>Related Publications</h4>
+
+        <ul class="publication-list">
+          <!-- Add verified TIM collaboration papers here. -->
+
+          <!-- Add verified FYST papers here. -->
+
+          <li>
+            <strong>Garcia, K.</strong> et al.
+            SLICK Predictions for Line-Intensity Mapping.
+            <span class="pub-status">In preparation.</span>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 3. AGN -->
+      <div class="card research-card">
+        <h3>AGN Feedback &amp; Molecular Gas</h3>
+
+        <p>
+          I study how radiation from active galactic nuclei
+          changes the thermal and chemical conditions of the
+          interstellar medium, and how these changes affect
+          molecular and atomic line emission. This work
+          connects AGN physics to observable diagnostics
+          of galaxies and future infrared observations.
+        </p>
+
+        <h4>Related Publications &amp; Ongoing Work</h4>
+
+        <ul class="publication-list">
+          <li>
+            <strong>Garcia, K.</strong> et al.
+            AGN Radiation and ISM Line Emission in
+            Cosmological Simulations.
+            <span class="pub-status">In preparation.</span>
+          </li>
+
+          <!-- Add PRIMA publications or projects here. -->
+        </ul>
+      </div>
+
+
+      <!-- 4. CLUSTERS -->
+      <div class="card research-card">
+        <h3>Galaxy Clusters &amp; Large-Scale Structure</h3>
+
+        <p>
+          I investigate the detection and characterization
+          of galaxy clusters using large multiwavelength
+          surveys. I lead a cluster catalog study in the
+          Boötes field, identifying 825 candidates over
+          a wide redshift range, and contribute to the
+          MaDCoWS2 collaboration, which searches for
+          galaxy clusters across thousands of square
+          degrees of the sky.
+        </p>
+
+        <h4>Related Publications</h4>
+
+        <ul class="publication-list">
+          <li>
+            <strong>Garcia, K.</strong> et al.
+            Galaxy Cluster Detection in the Boötes Field.
+            <span class="pub-status">Submitted.</span>
+          </li>
+
+          <li>
+            Thongkham, K. et al., including
+            <strong>Garcia, K.</strong> (2024).
+            <a href="https://arxiv.org/abs/2410.15303"
+               target="_blank" rel="noopener noreferrer">
+              The Massive and Distant Clusters of WISE
+              Survey 2: Second Data Release.
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 5. COSMOLOGICAL STATISTICS -->
+      <div class="card research-card">
+        <h3>Cosmological Statistics &amp; Methods</h3>
+
+        <p>
+          My work in cosmological statistics includes the
+          development of efficient methods for measuring
+          the anisotropic three-point correlation function
+          of galaxies, a higher-order statistic that
+          provides information beyond traditional
+          two-point clustering measurements.
+        </p>
+
+        <h4>Related Publication</h4>
+
+        <ul class="publication-list">
+          <li>
+            <strong>Garcia, K.</strong> &amp; Slepian, Z. (2022).
+            <a href="https://academic.oup.com/mnras/article/515/1/1199/6604894"
+               target="_blank" rel="noopener noreferrer">
+              Improving the Line of Sight for the
+              Anisotropic 3-Point Correlation Function
+              of Galaxies: Centroid and Unit-Vector-Average
+              Methods Scaling as O(N²).
+            </a>
+            <em>MNRAS, 515, 1199–1217.</em>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- 6. SUPERNOVA COSMOLOGY -->
+      <div class="card research-card">
+        <h3>Supernova Cosmology &amp; Survey Forecasts</h3>
+
+        <p>
+          My earlier research explored the use of Type Ia
+          supernova peculiar velocities as probes of
+          cosmology, including forecasts for the
+          information that future surveys such as
+          LSST could extract from large supernova samples.
+        </p>
+
+        <h4>Related Publication</h4>
+
+        <ul class="publication-list">
+          <li>
+            <strong>Garcia, K.</strong>,
+            Quartin, M. &amp; Siffert, B. B. (2020).
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S2212686419301220"
+               target="_blank" rel="noopener noreferrer">
+              On the Amount of Peculiar Velocity Field
+              Information in Supernovae from LSST and Beyond.
+            </a>
+            <em>Physics of the Dark Universe, 29, 100519.</em>
+          </li>
+        </ul>
+      </div>
+
+      <p class="publication-footer">
+        For a complete list of publications, see my
+        <a href="https://scholar.google.com/citations?user=wbsYUNMAAAAJ"
            target="_blank" rel="noopener noreferrer">
           Google Scholar profile
         </a>.
       </p>
-
-      <div class="card">
-        <h3>Galaxy Formation &amp; Interstellar Medium Physics</h3>
-
-        <p>
-          <strong>Garcia, K.</strong> et al.
-          SLICK: Modeling Molecular Line Emission
-          in Cosmological Simulations.
-          <em>Published work.</em>
-        </p>
-
-        <!-- Add Anirudh et al. paper here -->
-
-        <p>
-          <strong>Garcia, K.</strong> et al.
-          SLICK-2: Modeling Multi-Line Interstellar Medium
-          Emission Across Cosmological Volumes.
-          <span class="pub-status">In preparation.</span>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Line-Intensity Mapping</h3>
-
-        <!-- Add TIM and FYST publications here -->
-
-        <p>
-          <strong>Garcia, K.</strong> et al.
-          Predictions for Line-Intensity Mapping from SLICK.
-          <span class="pub-status">In preparation.</span>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>AGN &amp; Molecular Gas</h3>
-
-        <p>
-          <strong>Garcia, K.</strong> et al.
-          The Impact of AGN Radiation on Interstellar
-          Medium Line Emission in Cosmological Simulations.
-          <span class="pub-status">In preparation.</span>
-        </p>
-
-        <!-- Add verified PRIMA publications here -->
-      </div>
-
-      <div class="card">
-        <h3>Galaxy Clusters</h3>
-
-        <p>
-          <strong>Garcia, K.</strong> et al.
-          Galaxy Cluster Detection in the Boötes Field.
-          <span class="pub-status">Submitted.</span>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Cosmological Statistics &amp; Methods</h3>
-
-        <p>
-          <strong>Garcia, K.</strong> &amp; Slepian, Z. (2022).
-          Anisotropic Three-Point Correlation Function
-          Methods.
-          <em>MNRAS.</em>
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Supernova Cosmology &amp; Survey Forecasts</h3>
-
-        <p>
-          <strong>Garcia, K.</strong>,
-          Quartin, M. &amp; Siffert, B. B. (2020).
-          On the Amount of Peculiar Velocity Field
-          Information in Supernovae from LSST and Beyond.
-          <em>Physics of the Dark Universe.</em>
-        </p>
-      </div>
     </section>
 
 
@@ -235,41 +292,26 @@
     <section id="outreach">
       <h2>Science Communication &amp; Outreach</h2>
 
-      <div class="card">
-        <h3>Independent Science Communication</h3>
-        <p>
-          I create accessible astronomy and science content
-          in Portuguese, reaching an audience of more than
-          50,000 followers through social media.
-          My goal is to make science engaging and accessible
-          while encouraging curiosity and critical thinking.
-        </p>
-        <p>
-          <a href="https://www.instagram.com/karolintgarcia/"
-             target="_blank" rel="noopener noreferrer">
-            Instagram: @karolintgarcia
-          </a>
-        </p>
-      </div>
+      <p>
+        I'm passionate about making astronomy accessible
+        to broader audiences. I co-founded
+        <strong>AstroTubers</strong>, a collaborative
+        science communication initiative in Brazil,
+        and have been involved in astronomy outreach
+        and education for several years.
+      </p>
 
-      <div class="card">
-        <h3>AstroTubers</h3>
-        <p>
-          I co-founded AstroTubers, a collaborative astronomy
-          science communication project focused on bringing
-          astrophysics to Portuguese-speaking audiences.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Education and Mentorship</h3>
-        <p>
-          I have participated in science education,
-          mentorship, and outreach initiatives,
-          with an emphasis on making astronomy
-          accessible to broader audiences.
-        </p>
-      </div>
+      <p>
+        I also create independent science content in
+        Portuguese, reaching an audience of more than
+        50,000 followers on social media. Through
+        <a href="https://www.instagram.com/karolintgarcia/"
+           target="_blank" rel="noopener noreferrer">
+          Instagram (@karolintgarcia)
+        </a>,
+        I share astronomy, scientific discoveries,
+        and reflections on science and society.
+      </p>
     </section>
 
 
@@ -280,7 +322,7 @@
       <p>
         <a href="./assets/KGarcia_CV_2026.pdf"
            target="_blank" rel="noopener noreferrer">
-          View my CV (PDF)
+          Download my CV (PDF)
         </a>
       </p>
     </section>
@@ -291,8 +333,7 @@
       <h2>Contact</h2>
 
       <p>
-        University of Illinois Urbana-Champaign
-        <br>
+        University of Illinois Urbana-Champaign<br>
         National Center for Supercomputing Applications
       </p>
 
@@ -314,5 +355,6 @@
 
 </body>
 </html>
+
 
 
