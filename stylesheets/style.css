@@ -248,3 +248,76 @@ footer {
   font-size: 13px;
 }
 
+
+/* SLICK project page */
+
+.slick-page {
+  max-width: 850px;
+}
+
+.slick-page h1 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+
+.slick-page h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.slick-page p,
+.slick-page li {
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.slick-page section {
+  margin-bottom: 3rem;
+}
+
+.slick-subtitle {
+  color: #777;
+  font-size: 13px !important;
+  margin-bottom: 2rem;
+}
+
+.back-link {
+  font-size: 13px !important;
+  margin-bottom: 2rem;
+}
+
+.slick-highlight {
+  background: #f0f5fb;
+  border-left: 3px solid var(--accent);
+  padding: 1.2rem 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.slick-questions {
+  padding-left: 1.4rem;
+}
+
+.slick-questions li {
+  margin-bottom: 0.7rem;
+}
+
+.project-status {
+  color: #666;
+  font-size: 14px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .slick-page h2 {
+    font-size: 1.4rem;
+  }
+}
+
+
