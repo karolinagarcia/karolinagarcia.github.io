@@ -321,3 +321,210 @@ footer {
 }
 
 
+/* Research section */
+#research.research-program {
+  font-family: 'Inter', sans-serif;
+  color: var(--text, #2c2c2c);
+}
+
+#research .research-eyebrow {
+  font-size: 10px !important;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #777;
+  margin: 0 0 12px;
+}
+
+#research .research-vision {
+  margin: 1.5rem 0 2rem;
+}
+
+#research .research-vision h3 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: clamp(23px, 3vw, 30px);
+  line-height: 1.18;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+
+#research .research-vision p:not(.research-eyebrow),
+#research .research-core > p,
+#research .research-direction p,
+#research .research-other p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+#research .research-core {
+  background: #fff;
+  border: 1px solid var(--border, #ddd);
+  border-radius: 9px;
+  padding: clamp(20px, 3vw, 30px);
+  margin: 1.5rem 0 2.5rem;
+}
+
+#research .research-core-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#research .research-role {
+  font-size: 10px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  white-space: nowrap;
+}
+
+#research .research-core > h3 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 31px;
+  margin: 0 0 1px;
+}
+
+#research .research-subtitle {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 14px;
+}
+
+#research .research-core > h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 22px 0 8px;
+}
+
+#research .research-pubs {
+  padding-left: 18px;
+  margin: 7px 0 14px;
+}
+
+#research .research-pubs li {
+  font-size: 12px !important;
+  line-height: 1.55;
+  margin-bottom: 7px;
+}
+
+#research .research-link {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 17px;
+}
+
+#research .research-directions {
+  border-top: 1px solid #e7e7e7;
+  padding-top: 22px;
+  margin-top: 23px;
+}
+
+#research .research-direction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+#research .research-direction {
+  border: 1px solid #e3e3e3;
+  border-radius: 7px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+#research .research-direction h4 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 20px;
+  line-height: 1.18;
+  margin: 0 0 9px;
+}
+
+#research .research-direction p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 12px;
+}
+
+#research .research-direction h5 {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  margin: auto 0 5px;
+  font-size: 10px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+#research .research-direction .research-pubs {
+  padding-left: 15px;
+  margin-bottom: 12px;
+}
+
+#research .research-direction .research-pubs li {
+  font-size: 11px !important;
+}
+
+#research .research-card-link {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 7px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#research .research-additional {
+  margin-top: 10px;
+}
+
+#research .research-other {
+  padding: 15px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+#research .research-other:last-child {
+  border-bottom: 0;
+}
+
+#research .research-other h3 {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 21px;
+  margin: 0 0 5px;
+}
+
+#research .research-other p {
+  margin: 0 0 8px;
+}
+
+#research a {
+  color: var(--accent, #4a90e2);
+  text-decoration: none;
+}
+
+#research a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 740px) {
+  #research .research-direction-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #research .research-direction {
+    padding: 16px 18px;
+  }
+
+  #research .research-direction h5 {
+    margin-top: 4px;
+  }
+
+  #research .research-role {
+    font-size: 9px;
+  }
+}
+
+
