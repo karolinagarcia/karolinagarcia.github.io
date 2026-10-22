@@ -1,297 +1,121 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-  <title>SLICK | Karolina Garcia</title>
-
-  <meta name="description"
-        content="SLICK: Connecting interstellar medium
-        physics to cosmological simulations and
-        emission-line observations.">
-
-  <link rel="stylesheet"
-        href="../stylesheets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SLICK: connecting the physics of the interstellar medium in cosmological simulations to observable emission lines.">
+  <title>SLICK — Karolina Garcia</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <style>
+    /* Project-specific styles; your existing website CSS remains unchanged. */
+    .slick-page { max-width: 940px; }
+    .slick-page h1 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.16; margin: .5rem 0 1rem; }
+    .slick-page h2 { font-size: 1.65rem; margin: 0 0 .75rem; }
+    .slick-page p, .slick-page li { font-size: 15px; line-height: 1.75; }
+    .slick-page section { margin-bottom: 3.2rem; }
+    .slick-page .eyebrow { color: #a45b44; font-size: 12px; font-weight: 600; letter-spacing: .13em; text-transform: uppercase; }
+    .slick-page .lead { font-size: 17px; max-width: 790px; }
+    .slick-page .back-link { font-size: 13px; margin-bottom: 1.7rem; }
+    .slick-page figure { margin: 1.5rem 0 0; }
+    .slick-page figure img { display: block; width: 100%; height: auto; border-radius: 7px; }
+    .slick-page figcaption { margin-top: .65rem; color: #626971; font-size: 12px; line-height: 1.55; }
+    .slick-page .figure-link { display: block; }
+    .slick-page .wide-figure { margin-left: -5%; margin-right: -5%; }
+    .slick-page .topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.25rem; }
+    .slick-page .topic { border: 1px solid #ddd; background: #fff; border-radius: 8px; padding: 1.1rem; }
+    .slick-page .topic h3 { font-size: 1.22rem; margin: 0 0 .45rem; }
+    .slick-page .topic p { font-size: 14px; margin: 0; }
+    .slick-page .pub-list { padding-left: 1.25rem; }
+    .slick-page .pub-list li { margin-bottom: .85rem; }
+    .slick-page .resource-link { margin-top: 1rem; }
+    @media (max-width: 900px) { .slick-page .wide-figure { margin-left: 0; margin-right: 0; } }
+    @media (max-width: 650px) {
+      .slick-page .topics { grid-template-columns: 1fr; }
+      .slick-page .lead { font-size: 16px; }
+      .slick-page h2 { font-size: 1.45rem; }
+      .slick-page figure img { border-radius: 4px; }
+    }
+  </style>
 </head>
-
 <body>
-
-  <!-- NAVIGATION -->
   <header class="top-nav">
     <div class="nav-container">
-      <a href="../index.html#home">
-        <strong>Karolina Garcia</strong>
-      </a>
-
-      <nav>
+      <a href="../index.html"><strong>Karolina Garcia</strong></a>
+      <nav aria-label="Main navigation">
         <ul>
-          <li>
-            <a href="../index.html#about">About</a>
-          </li>
-          <li>
-            <a href="../index.html#research">Research</a>
-          </li>
-          <li>
-            <a href="../index.html#outreach">Outreach</a>
-          </li>
-          <li>
-            <a href="../index.html#cv">CV</a>
-          </li>
-          <li>
-            <a href="../index.html#contact">Contact</a>
-          </li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#research">Research</a></li>
+          <li><a href="../index.html#outreach">Outreach</a></li>
+          <li><a href="../index.html#cv">CV</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
   <main class="container slick-page">
+    <p class="back-link"><a href="../index.html#research">&larr; Back to Research &amp; Publications</a></p>
 
-    <p class="back-link">
-      <a href="../index.html#research">
-        &larr; Back to Research
-      </a>
-    </p>
-
-
-    <!-- INTRODUCTION -->
-    <section class="slick-intro">
-
-      <h1>
-        SLICK: Connecting the Physics of Galaxies
-        to the Observable Universe
-      </h1>
-
-      <p class="slick-subtitle">
-        Galaxy formation &bull;
-        Interstellar medium physics &bull;
-        Cosmological simulations &bull;
-        Emission-line modeling
-      </p>
-
-      <p>
-        Galaxies are complex systems. Their gas exists
-        in different physical phases, exposed to
-        radiation, turbulence, and a variety of
-        environmental conditions. These processes
-        determine how galaxies form stars, evolve,
-        and emit radiation.
-      </p>
-
-      <p>
-        But how do we connect this detailed physics
-        to the light we observe from galaxies
-        across the Universe?
-      </p>
-
-      <p>
-        This is the central motivation behind
-        <strong>SLICK</strong>, a modeling framework
-        I developed to predict atomic and molecular
-        line emission from cosmological simulations.
-      </p>
-
+    <section aria-labelledby="slick-title">
+      <div class="eyebrow">Galaxy formation · Interstellar medium · Cosmological simulations</div>
+      <h1 id="slick-title">SLICK: From Gas Physics to Observable Galaxies</h1>
+      <p class="lead">How do we predict the light emitted by galaxies when the physical processes that produce it occur on scales far smaller than cosmological simulations can resolve?</p>
+      <p>I developed <strong>SLICK (Scalable Line Intensity Computation Kit)</strong> to help bridge this gap. The framework connects the physical state of gas in simulated galaxies to their atomic and molecular emission lines, providing a way to investigate how the interstellar medium shapes the observables we measure across cosmic time.</p>
     </section>
 
-
-    <!-- MOTIVATION -->
-    <section>
-      <h2>The Scientific Challenge</h2>
-
-      <p>
-        Cosmological simulations follow the formation
-        and evolution of galaxies across enormous
-        volumes of the Universe. However, many of
-        the processes responsible for their observable
-        emission occur on scales much smaller than
-        these simulations can resolve.
-      </p>
-
-      <p>
-        As a result, connecting simulated galaxies
-        to observations requires models that bridge
-        the gap between small-scale interstellar
-        medium physics and cosmological structure.
-      </p>
-
-      <p>
-        SLICK was designed to address this challenge
-        by incorporating physically motivated models
-        of the gas and its emission into large-scale
-        simulations.
-      </p>
+    <section aria-labelledby="how-title">
+      <h2 id="how-title">How SLICK Works</h2>
+      <p>SLICK starts with gas in cosmological hydrodynamical simulations, models its unresolved interstellar medium, and calculates line emission using physical models of gas chemistry, heating, cooling, and radiative transfer. These calculations connect individual gas components to galaxy-integrated luminosities.</p>
+      <figure>
+        <a class="figure-link" href="../assets/images/research/slick-workflow.png" target="_blank" rel="noopener noreferrer" aria-label="Open SLICK workflow figure at full size">
+          <img src="../assets/images/research/slick-workflow.png" alt="SLICK workflow from a cosmological simulation box to a galaxy and gas particle, including molecular clouds, PDRs, HII regions, diffuse gas, DESPOTIC and Cloudy calculations, and resulting line luminosities." loading="eager">
+        </a>
+        <figcaption><strong>The SLICK modeling framework.</strong> From cosmological simulations to gas-phase modeling and emission-line luminosities. Select the figure to view it at full size.</figcaption>
+      </figure>
     </section>
 
+    <section aria-labelledby="enables-title">
+      <h2 id="enables-title">What SLICK Enables</h2>
+      <p>Rather than prescribing line luminosities solely from galaxy-wide scaling relations, SLICK uses the modeled physical conditions of gas to predict emission. The original framework and ongoing SLICK-2 extensions open the door to multi-line studies of galaxies and their evolution.</p>
+      <figure class="wide-figure">
+        <a class="figure-link" href="../assets/images/research/slick-capabilities.png" target="_blank" rel="noopener noreferrer" aria-label="Open SLICK capabilities infographic at full size">
+          <img src="../assets/images/research/slick-capabilities.png" alt="Four-panel conceptual overview of SLICK: multi-line predictions, connections between line emission and gas phases, cosmic evolution, and applications to line-intensity mapping." loading="lazy">
+        </a>
+        <figcaption><strong>From gas physics to cosmological observables.</strong> A schematic overview of capabilities and scientific applications across the published SLICK framework and SLICK-2 developments. The panels do not show quantitative results. Select to enlarge.</figcaption>
+      </figure>
+    </section>
 
-    <!-- APPROACH -->
-    <section>
-      <h2>Our Approach</h2>
-
-      <p>
-        Rather than assigning line luminosities
-        to galaxies using only empirical scaling
-        relations, SLICK predicts emission from
-        the physical conditions of their gas.
-      </p>
-
-      <p>
-        The framework combines cosmological
-        hydrodynamical simulations with models
-        of the multiphase interstellar medium,
-        thermal and chemical processes, and
-        radiative transfer.
-      </p>
-
-      <p>
-        This allows us to explore how variations
-        in gas density, metallicity, radiation
-        fields, and other physical conditions
-        influence the emission of different
-        atomic and molecular lines.
-      </p>
-
-      <div class="slick-highlight">
-        <strong>The central idea:</strong>
-        Emission-line properties emerge from
-        the modeled physics of the gas, rather
-        than being prescribed solely by
-        galaxy-wide empirical relations.
+    <section aria-labelledby="next-title">
+      <h2 id="next-title">Current Developments</h2>
+      <p>Building on the published SLICK framework, my ongoing research extends its physical scope and explores how emission lines can probe galaxy evolution and cosmological structure.</p>
+      <div class="topics">
+        <div class="topic">
+          <h3>SLICK-2</h3>
+          <p>Expanding multi-line predictions across molecular, neutral, and ionized gas components in cosmological simulations.</p>
+        </div>
+        <div class="topic">
+          <h3>AGN &amp; Molecular Gas</h3>
+          <p>Investigating how radiation from active galactic nuclei changes the physical state of gas and its line emission.</p>
+        </div>
+        <div class="topic">
+          <h3>Line-Intensity Mapping</h3>
+          <p>Connecting simulated galaxy emission to large-scale observables such as line-intensity maps and power spectra.</p>
+        </div>
       </div>
     </section>
 
-
-    <!-- SCIENTIFIC APPLICATIONS -->
-    <section>
-      <h2>What Can We Learn?</h2>
-
-      <p>
-        By connecting interstellar medium physics
-        to observable line emission, SLICK enables
-        investigations of several questions:
-      </p>
-
-      <ul class="slick-questions">
-        <li>
-          How do molecular and atomic gas
-          tracers evolve across cosmic time?
-        </li>
-
-        <li>
-          What can emission-line ratios tell us
-          about the physical conditions
-          inside galaxies?
-        </li>
-
-        <li>
-          How do changes in galaxy formation
-          physics affect observable line emission?
-        </li>
-
-        <li>
-          What signals should we expect from
-          upcoming line-intensity mapping surveys?
-        </li>
+    <section aria-labelledby="pub-title">
+      <h2 id="pub-title">Publications &amp; Resources</h2>
+      <ul class="pub-list">
+        <li><strong>Garcia, K.</strong>, Narayanan, D., Popping, G., Anirudh, R., Sutherland, S., &amp; Kaasinen, M. (2024). <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..197G/abstract" target="_blank" rel="noopener noreferrer">SLICK: Modeling a Universe of Molecular Line Luminosities in Hydrodynamical Simulations.</a> <em>The Astrophysical Journal, 974, 197.</em></li>
+        <li><strong>Garcia, K.</strong> et al. <em>SLICK-2: Modeling Multi-Line Interstellar Medium Emission Across Cosmological Volumes.</em> Manuscript in preparation (working title).</li>
       </ul>
+      <!-- Replace # with the existing technical SLICK website URL when ready. -->
+      <!-- <p class="resource-link"><a href="https://YOUR-SLICK-WEBSITE" target="_blank" rel="noopener noreferrer">Visit the SLICK project website &rarr;</a></p> -->
+      <p class="resource-link"><a href="../index.html#research">&larr; More research projects</a></p>
     </section>
-
-
-    <!-- SLICK 2 -->
-    <section>
-      <h2>Beyond the Original SLICK: SLICK-2</h2>
-
-      <p>
-        The next stage of this work extends
-        the original framework toward a more
-        comprehensive treatment of atomic
-        and molecular emission.
-      </p>
-
-      <p>
-        SLICK-2 brings together models of
-        multiple gas phases and emission lines,
-        enabling a more unified investigation
-        of the interstellar medium in
-        cosmological simulations.
-      </p>
-
-      <p>
-        This development is particularly
-        important for connecting galaxy
-        formation models to multi-line
-        observations and for interpreting
-        line-intensity mapping measurements.
-      </p>
-
-      <p class="project-status">
-        SLICK-2 methodology paper:
-        <em>Manuscript in preparation.</em>
-      </p>
-    </section>
-
-
-    <!-- PUBLICATIONS -->
-    <section>
-      <h2>Publications</h2>
-
-      <ul class="publication-list">
-
-        <li>
-          <strong>Garcia, K.</strong> et al. (2024).
-          <a href="https://doi.org/10.3847/1538-4357/ad642c"
-             target="_blank"
-             rel="noopener noreferrer">
-            SLICK: Modeling a Universe of Molecular
-            Line Luminosities in Hydrodynamical
-            Simulations.
-          </a>
-          <em>ApJ, 974, 197.</em>
-        </li>
-
-        <li>
-          <strong>Garcia, K.</strong> et al.
-          SLICK-2: Multi-Line ISM Emission
-          in Cosmological Simulations.
-          <em>In preparation.</em>
-        </li>
-
-      </ul>
-
-    </section>
-
-
-    <!-- LINKS -->
-    <section>
-      <h2>Explore Further</h2>
-
-      <p>
-        For technical documentation, implementation
-        details, and additional information,
-        visit the dedicated SLICK project website.
-      </p>
-
-      <!-- Add the existing SLICK website link here -->
-
-      <p>
-        <a href="../index.html#research">
-          &larr; Return to Research &amp; Publications
-        </a>
-      </p>
-    </section>
-
   </main>
 
-
-  <footer>
-    <p>
-      &copy; 2026 Karolina Garcia.
-      All rights reserved.
-    </p>
-  </footer>
-
+  <footer><p>&copy; 2026 Karolina Garcia.</p></footer>
 </body>
 </html>
-
